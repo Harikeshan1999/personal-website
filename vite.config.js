@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio-website/',  // Corrects asset paths for GitHub Pages
+  base: '/personal-website/',  // Corrects asset paths for GitHub Pages
   build: {
     outDir: 'build',  // Specifies the output directory for the build
   },
