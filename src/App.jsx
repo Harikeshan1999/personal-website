@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Container, Navbar, Nav, Row, Col, Button } from 'react-bootstrap';
-import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter, FaInstagram, FaPrescriptionBottleAlt, FaChalkboardTeacher, FaBalanceScale, FaSyringe, FaMapMarkerAlt, FaPhone, FaGraduationCap, FaHeartbeat, FaSyncAlt, FaLightbulb, FaGlobeAsia, FaAngleRight } from 'react-icons/fa';
+import { FaLinkedin,  FaEnvelope, FaTwitter, FaFacebook, FaPrescriptionBottleAlt, FaChalkboardTeacher, FaBalanceScale, FaSyringe, FaMapMarkerAlt, FaPhone, FaGraduationCap, FaHeartbeat, FaSyncAlt, FaLightbulb, FaGlobeAsia, FaAngleRight } from 'react-icons/fa';
 import { MdPsychology, MdGavel, MdHealthAndSafety, MdSchool } from 'react-icons/md';
 import { BsFillLightbulbFill, BsGearFill } from 'react-icons/bs';
 import { FaComments, FaUsers, FaBrain, FaPuzzlePiece, FaClock, FaHandshake, FaFileWord, FaFileExcel, FaSearch, FaSitemap, FaChartBar, FaTasks } from 'react-icons/fa';
@@ -75,14 +75,11 @@ function App() {
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                  <FaGithub />
-                </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                   <FaTwitter />
                 </a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram />
+                  <FaFacebook />
                 </a>
                 <a href="mailto:your.email@example.com">
                   <FaEnvelope />
@@ -411,8 +408,8 @@ function App() {
                   <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin">
                     <FaLinkedin />
                   </a>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="github">
-                    <FaGithub />
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="twitter">
+                    <FaFacebook />
                   </a>
                   <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="twitter">
                     <FaTwitter />
