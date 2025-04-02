@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/personal-website/', // Replace with your GitHub repo name
   build: {
-    outDir: 'build',
+    outDir: 'dist',
   },
 });

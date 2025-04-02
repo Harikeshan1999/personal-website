@@ -94,7 +94,7 @@ function App() {
             </Col>
             <Col md={6} className="text-center">
               <div className="hero-image-container">
-                <img src="/src/assets/profile.jpg" alt="Gurumoorthy Harikeshan" className="hero-image" />
+                <img src="./profile.jpg" alt="Gurumoorthy Harikeshan" className="hero-image" />
               </div>
             </Col>
           </Row>
