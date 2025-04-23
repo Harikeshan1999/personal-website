@@ -3,7 +3,9 @@ import { Container, Navbar, Nav, Row, Col, Button } from 'react-bootstrap';
 import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter, FaInstagram, FaPrescriptionBottleAlt, FaChalkboardTeacher, FaBalanceScale, FaSyringe, FaMapMarkerAlt, FaPhone, FaGraduationCap, FaHeartbeat, FaSyncAlt, FaLightbulb, FaGlobeAsia, FaAngleRight } from 'react-icons/fa';
 import { MdPsychology, MdGavel, MdHealthAndSafety, MdSchool } from 'react-icons/md';
 import { BsFillLightbulbFill, BsGearFill } from 'react-icons/bs';
-import { FaComments, FaUsers, FaBrain, FaPuzzlePiece, FaClock, FaHandshake, FaFileWord, FaFileExcel, FaSearch, FaSitemap, FaChartBar, FaTasks } from 'react-icons/fa';
+import profileImage from './assets/Hari.pdf';
+
+import { FaComments, FaHospitalAlt, FaDownload, FaUsers, FaBrain, FaUserTie, FaShieldAlt, FaPuzzlePiece, FaClock, FaHandshake, FaFileWord, FaFileExcel, FaSearch, FaSitemap, FaChartBar, FaTasks } from 'react-icons/fa';
 import './App.css';
 
 function App() {
@@ -48,7 +50,7 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               {['home', 'about', 'education', 'experience', 'skills', 'contact'].map((section) => (
-                <Nav.Link 
+                <Nav.Link
                   key={section}
                   href={`#${section}`}
                   className={activeLink === section ? 'active' : ''}
@@ -65,7 +67,7 @@ function App() {
       <section id="home" className="hero-section">
         <Container>
           <Row className="align-items-center">
-            
+
             <Col md={6} className="text-center text-md-start hero-content">
               <h1>Transforming Lives Through Knowledge</h1>
               <p className="lead">
@@ -88,9 +90,12 @@ function App() {
                   <FaEnvelope />
                 </a>
               </div>
-              <Button variant="primary" size="lg" href="#contact">
-                Let&apos;s Connect
-              </Button>
+
+              <a href={profileImage} download>
+                <Button variant="primary" size="lg">
+                  Download CV <FaDownload style={{ marginLeft: "8px" }} />
+                </Button>
+              </a>
             </Col>
             <Col md={6} className="text-center">
               <div className="hero-image-container">
@@ -112,7 +117,7 @@ function App() {
                 <p className="lead main-text">
                   A dedicated professional pursuing multiple disciplines with a passion for making a difference.
                 </p>
-                
+
                 <Row className="mt-5">
                   <Col md={4} className="mb-4">
                     <div className="about-card">
@@ -123,7 +128,7 @@ function App() {
                       <p>Pursuing LLB with focus on human rights and social justice</p>
                     </div>
                   </Col>
-                  
+
                   <Col md={4} className="mb-4">
                     <div className="about-card">
                       <div className="about-icon psychology">
@@ -133,7 +138,7 @@ function App() {
                       <p>Specialized in child and counselling psychology</p>
                     </div>
                   </Col>
-                  
+
                   <Col md={4} className="mb-4">
                     <div className="about-card">
                       <div className="about-icon health">
@@ -155,7 +160,7 @@ function App() {
                       </div>
                     </div>
                   </Col>
-                  
+
                   <Col md={6} className="mb-4">
                     <div className="feature-box">
                       <BsGearFill className="feature-icon" />
@@ -186,41 +191,48 @@ function App() {
             <Col lg={12}>
               <div className="timeline">
                 {[
-                 {
-                  title: "Marketing Course",
-                  status: "Completed",
-                  year: "2019-2020",
-                  description: "Mastered fundamental marketing principles and strategies",
-                  icon: <BsGearFill />
-                 },
-                 {
-                  title: "Diploma in Child and Educational Psychology",
-                  status: "Reading",
-                  year: "2023 - 2024",
-                  description: "Focusing on child development and educational methodologies",
-                  icon: <MdPsychology />
-                },
-                {
-                  title: "Diploma in Counselling Psychology",
-                  status: "Reading",
-                  year: "2023 - 2024",
-                  description: "Developing expertise in therapeutic approaches and counseling techniques",
-                  icon: <MdPsychology />
-                },
-                {
-                  title: "LLB (Hons) - Law Degree",
-                  status: "Reading",
-                  year: "2020 - 2024",
-                  description: "Studying legal frameworks with focus on human rights",
-                  icon: <MdGavel />
-                },
-                {
-                  title: "BSc in Health Promotion",
-                  status: "Reading",
-                  year: "2022 - Present",
-                  description: "Learning comprehensive approaches to community health",
-                  icon: <MdHealthAndSafety />
-                }
+                  {
+                    title: "Preliminary Certificate course in marketing",
+                    status: "Completed",
+                    year: "2019-2020",
+                    description: "Mastered fundamental marketing principles and strategies",
+                    icon: <BsGearFill />
+                  },
+                  {
+                    title: "Diploma in Child and Educational Psychology",
+                    status: "Completed",
+                    year: "2023 - 2024",
+                    description: "Focusing on child development and educational methodologies",
+                    icon: <MdPsychology />
+                  },
+                  {
+                    title: "Diploma in Counseling and Psychology",
+                    status: "Completed",
+                    year: "2023 - 2024",
+                    description: "Developing expertise in therapeutic approaches and counseling techniques",
+                    icon: <MdPsychology />
+                  },
+                  {
+                    title: "LLB (Hons) - Law Degree",
+                    status: "Completed",
+                    year: "2020 - 2024",
+                    description: "Studying legal frameworks with focus on human rights",
+                    icon: <MdGavel />
+                  },
+                  {
+                    title: "Diploma in Human Resource Management",
+                    status: "Completed",
+                    year: "2022 - 2024",
+                    description: "Gained expertise in managing workforce operations, recruitment, and organizational development.",
+                    icon: <FaUserTie />
+                  },
+                  {
+                    title: "BSc in Health Promotion",
+                    status: "Reading",
+                    year: "2022 - Present",
+                    description: "Learning comprehensive approaches to community health",
+                    icon: <MdHealthAndSafety />
+                  }
                 ].map((edu, index) => (
                   <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
                     <div className="timeline-icon">
@@ -262,7 +274,7 @@ function App() {
               },
               {
                 title: "Law Office Clerk",
-                duration: "3 Months",
+                duration: "4 Months",
                 description: "Gained practical experience in legal procedures and documentation.",
                 icon: <FaBalanceScale />
               },
@@ -271,6 +283,24 @@ function App() {
                 type: "Voluntary Work",
                 description: "Contributed to public health efforts during the pandemic.",
                 icon: <FaSyringe />
+              },
+              {
+                title: "Maradankulama Villagek Health Intervention",
+                type: "Public Health Intervention Work",
+                description: "A community health initiative improving well-being through education",
+                icon: <FaHospitalAlt />
+              },
+              {
+                title: "National Child Protection Authority",
+                type: "University Ambassador",
+                description: "Advocating for child safety and welfare through awareness and protection programs.",
+                icon: <FaShieldAlt />
+              },
+              {
+                title: "Zero Plastic Initiative (Rajarata University of Sri Lanka)",
+                type: "Volunteer ",
+                description: "Advocating for child safety and welfare through awareness and protection programs.",
+                icon: <FaShieldAlt />
               }
             ].map((exp, index) => (
               <Col lg={6} key={index} className="mb-4">
@@ -321,7 +351,7 @@ function App() {
                 ))}
               </div>
             </div>
-            
+
             <div className="skills-category">
               <h3>Technical Skills</h3>
               <div className="skills-grid">
@@ -361,9 +391,9 @@ function App() {
                     <div className="percent">
                       <svg>
                         <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70" 
-                          style={{ 
-                            strokeDashoffset: `${440 - (440 * lang.percentage) / 100}` 
+                        <circle cx="70" cy="70" r="70"
+                          style={{
+                            strokeDashoffset: `${440 - (440 * lang.percentage) / 100}`
                           }}></circle>
                       </svg>
                       <div className="number">
@@ -381,7 +411,7 @@ function App() {
 
       <footer className="footer-section">
         <div className="footer-shape"></div>
-        
+
         {/* New Newsletter Section */}
         <div className="footer-newsletter">
           <Container>
@@ -406,7 +436,7 @@ function App() {
                 <p className="footer-about">
                   Dedicated to making a positive impact through the integration of law, psychology, and health promotion.
                 </p>
-               
+
                 <div className="footer-social">
                   <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin">
                     <FaLinkedin />
@@ -465,7 +495,7 @@ function App() {
                     <span>harikeshangurumoorthy@gmail.com</span>
                   </p>
                 </div>
-               
+
               </Col>
             </Row>
           </Container>
