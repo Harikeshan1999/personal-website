@@ -3,7 +3,7 @@ import { Container, Navbar, Nav, Row, Col, Button } from 'react-bootstrap';
 import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter, FaInstagram, FaPrescriptionBottleAlt, FaChalkboardTeacher, FaBalanceScale, FaSyringe, FaMapMarkerAlt, FaPhone, FaGraduationCap, FaHeartbeat, FaSyncAlt, FaLightbulb, FaGlobeAsia, FaAngleRight } from 'react-icons/fa';
 import { MdPsychology, MdGavel, MdHealthAndSafety, MdSchool } from 'react-icons/md';
 import { BsFillLightbulbFill, BsGearFill } from 'react-icons/bs';
-import profileImage from './assets/Hari.pdf';
+import profilepdf from './assets/hari.pdf'
 
 import { FaComments, FaHospitalAlt, FaDownload, FaUsers, FaBrain, FaUserTie, FaShieldAlt, FaPuzzlePiece, FaClock, FaHandshake, FaFileWord, FaFileExcel, FaSearch, FaSitemap, FaChartBar, FaTasks } from 'react-icons/fa';
 import './App.css';
@@ -91,7 +91,7 @@ function App() {
                 </a>
               </div>
 
-              <a href={profileImage} download>
+              <a href={profilepdf} download>
                 <Button variant="primary" size="lg">
                   Download CV <FaDownload style={{ marginLeft: "8px" }} />
                 </Button>
@@ -261,7 +261,7 @@ function App() {
             {[
               {
                 title: "Pharmacy Assistant",
-                duration: "1 Year",
+                duration: "6 Months",
                 description: "Assisted in pharmacy operations and customer service.",
                 icon: <FaPrescriptionBottleAlt />
               },
@@ -274,7 +274,7 @@ function App() {
               },
               {
                 title: "Law Office Clerk",
-                duration: "4 Months",
+                duration: "2020 to present",
                 description: "Gained practical experience in legal procedures and documentation.",
                 icon: <FaBalanceScale />
               },
